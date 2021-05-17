@@ -32,7 +32,7 @@ const App = () => {
 
   return (
     <div id="master">
-      <h5 onClick={()=>applyColor} className="heading">{title/* display title here */}</h5>
+      <h5 className="heading">{title/* display title here */}</h5>
 
       <div className="row">
         {colourConfig.map((config, index) => (
