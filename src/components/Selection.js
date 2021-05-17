@@ -3,11 +3,10 @@ import React,{useState} from 'react'
 
 const Selection = (props) =>{
 
-        const [state, setState ]=useState({ background: "red" })
-        
+        const [state, setState ]=useState({ background: '' })
         return(
             
-        <div style={{background : state}} className='fix-box' onClick={()=>setState(props.applyColor())}>
+        <div style={state} className='fix-box' onClick={()=>{setState({background:props.applyColor})}}>
                 <h2 className='subheading'>Selection</h2>
             </div>
         )
